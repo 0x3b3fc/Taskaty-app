@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('/', TaskController::class);
 Route::delete('/destroy/{id}', [TaskController::class, 'destroy']);
+

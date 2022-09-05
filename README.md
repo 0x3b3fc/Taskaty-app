@@ -2,9 +2,7 @@
 # Taskaty App - FullStack Project
 
 ## used technologies
-    -  HTML
-    -  CSS
-    -  PHP
+    -  BOOTSTRAP
     -  LARAVEL
     -  LIVEWIRE
 

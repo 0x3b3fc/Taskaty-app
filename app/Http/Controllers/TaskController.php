@@ -14,8 +14,9 @@ class TaskController extends Controller
      */
     public function index()
     {
-        $tasks = Task::all();
-        return view('frontend.index', compact('tasks'));
+        $totalTasks = Task::all()->count();
+        $tasks = Task::paginate(5);
+        return view('frontend.index', compact('tasks','totalTasks'));
     }
 
     /**
