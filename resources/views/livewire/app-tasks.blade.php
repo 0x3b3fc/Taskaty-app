@@ -15,11 +15,7 @@
                 <th scope="row">{{ $task->id }}</th>
                 <td>{{ $task->task }}</td>
                 <td>
-                    <form action="{{ url('/destroy',$task->id) }}" method="post">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
+                    <a href="{{ url('/destroy',$task->id) }}" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
         @endforeach
